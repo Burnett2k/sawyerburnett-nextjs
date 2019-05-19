@@ -5,4 +5,4 @@ services:
     image: sawyerburnett-nextjs
     ports:
       - 5001:5001
-    command: yarn start
+    command: yarn start -p 5001
