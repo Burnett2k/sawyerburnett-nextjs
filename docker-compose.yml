@@ -5,4 +5,4 @@ services:
     image: sawyerburnett
     ports:
       - 5001:5001
-    command: yarn start -p 5001
+    command: yarn start
