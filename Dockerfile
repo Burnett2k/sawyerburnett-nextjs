@@ -11,11 +11,10 @@ COPY next.config.js ./
 
 COPY .babelrc ./
 
-COPY containers ./
-COPY pages ./
-COPY src ./
-COPY static ./
+COPY containers ./containers
+COPY pages ./pages
+COPY src ./src
+COPY static ./static
 
 RUN yarn install
 RUN yarn build
-RUN yarn start
