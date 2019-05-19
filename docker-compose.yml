@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    container_name: sawyerburnett
+    image: sawyerburnett
+    ports:
+      - 5001:5001
+    command: yarn start -p 5001
