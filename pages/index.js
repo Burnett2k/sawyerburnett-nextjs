@@ -27,7 +27,6 @@ class Index extends React.Component {
         <Grid container justify="center">
           <Grid item>
             <Card>
-              <CardHeader title="Intro" />
               <CardContent>
                 <Typography component="p">
                   I am a programmer currently working on React and Node JS
