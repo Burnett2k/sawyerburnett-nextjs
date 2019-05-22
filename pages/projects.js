@@ -4,6 +4,7 @@ import React from "react";
 import Panel from "../containers/Panel.js";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import CardContainer from "../containers/CardContainer";
 import Link from "next/link";
 
 const projects = [
@@ -41,14 +42,20 @@ function Projects(props) {
 
   return (
     <div>
-      <h1>Projects</h1>
-      <ul>
-        {projects.map(project => (
-          <React.Fragment>
-            <Panel key={project.id} title={project.title} link={project.link} />
-          </React.Fragment>
-        ))}
-      </ul>
+      <CardContainer>
+        <h1>Projects</h1>
+        <ul>
+          {projects.map(project => (
+            <React.Fragment>
+              <Panel
+                key={project.id}
+                title={project.title}
+                link={project.link}
+              />
+            </React.Fragment>
+          ))}
+        </ul>
+      </CardContainer>
     </div>
   );
 }
