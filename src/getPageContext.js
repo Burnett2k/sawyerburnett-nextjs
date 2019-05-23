@@ -14,10 +14,10 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiCard: {
-      root: { minWidth: 300, maxWidth: 400 }
+      root: { minWidth: 300, maxWidth: 1100 }
     },
     MuiCardMedia: {
-      root: { height: 300, maxHeight: 300 }
+      root: { height: 300, maxHeight: 1100 }
     }
   },
   typography: {

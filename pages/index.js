@@ -4,7 +4,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import {
   Card,
-  CardHeader,
   CardContent,
   CardMedia,
   Typography,
@@ -28,12 +27,13 @@ class Index extends React.Component {
           <Grid item>
             <Card>
               <CardContent>
-                <Typography component="p">
-                  I am a programmer currently working on React and Node JS
-                  applications, but I do enjoy dabbling in other technologies
-                  quite often. Some of my current interests are material design,
-                  page rendering performance, user experience, unit testing, and
-                  solving problems.
+                <Typography variant="h6">
+                  I'm a sofware engineer currently located in the Phoenix area.
+                  At the moment I am enjoying working with React and Nodejs
+                  applications. Some of my current interests are load testing,
+                  user experience, design philosophy, accessibility, and IoT.
+                  Also, I like to help people which is why I work at Solera
+                  Health.
                 </Typography>
                 <CardMedia
                   image={"/static/whitney-summit.jpg"}
