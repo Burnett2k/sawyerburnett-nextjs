@@ -1,7 +1,7 @@
 import React from "react";
 import App, { Container } from "next/app";
 import Head from "next/head";
-import { MuiThemeProvider } from "@material-ui/core/styles";
+import { MuiThemeProvider, withStyles } from "@material-ui/core/styles";
 import JssProvider from "react-jss/lib/JssProvider";
 import getPageContext from "../src/getPageContext";
 import {
@@ -9,16 +9,19 @@ import {
   Toolbar,
   Drawer,
   Typography,
-  CssBaseline
+  CssBaseline,
+  IconButton
 } from "@material-ui/core";
 import NavigationMenu from "../containers/NavigationMenu";
+import GitHub from "../components/GitHub";
 
 const styles = {
-  root: {
-    flexGrow: 1
-  },
   grow: {
     flexGrow: 1
+  },
+  toolbarButtons: {
+    position: "relative",
+    marginLeft: 0
   }
 };
 
@@ -52,20 +55,32 @@ class MyApp extends App {
             theme={this.pageContext.theme}
             sheetsManager={this.pageContext.sheetsManager}
           >
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-            <AppBar position="static">
-              <Toolbar>
-                <NavigationMenu />
-                <Typography variant="h6" color="inherit">
-                  Sawyer Burnett
-                </Typography>
-              </Toolbar>
-            </AppBar>
-            <Drawer />
-            {/* Pass pageContext to the _document though the renderPage enhancer
+            <CssBaseline>
+              <div className={classes.grow}>
+                <AppBar position="static">
+                  <Toolbar>
+                    <NavigationMenu />
+                    <Typography variant="h6" color="inherit">
+                      Sawyer Burnett
+                    </Typography>
+                    <div className={classes.grow} />
+                    <div className={classes.toolbarButtons}>
+                      <IconButton
+                        color="secondary"
+                        color="inherit"
+                        aria-label="Menu"
+                      >
+                        <GitHub />
+                      </IconButton>
+                    </div>
+                  </Toolbar>
+                </AppBar>
+              </div>
+              <Drawer />
+              {/* Pass pageContext to the _document though the renderPage enhancer
                 to render collected styles on server-side. */}
-            <Component pageContext={this.pageContext} {...pageProps} />
+              <Component pageContext={this.pageContext} {...pageProps} />
+            </CssBaseline>
           </MuiThemeProvider>
         </JssProvider>
       </Container>
@@ -73,4 +88,4 @@ class MyApp extends App {
   }
 }
 
-export default MyApp;
+export default withStyles(styles)(MyApp);
