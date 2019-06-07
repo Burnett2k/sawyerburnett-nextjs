@@ -20,8 +20,7 @@ const styles = {
     flexGrow: 1
   },
   toolbarButtons: {
-    position: "relative",
-    marginLeft: 0
+    marginLeft: "auto"
   }
 };
 
@@ -63,16 +62,15 @@ class MyApp extends App {
                     <Typography variant="h6" color="inherit">
                       Sawyer Burnett
                     </Typography>
-                    <div className={classes.grow} />
-                    <div className={classes.toolbarButtons}>
-                      <IconButton
-                        color="secondary"
-                        color="inherit"
-                        aria-label="Menu"
-                      >
-                        <GitHub />
-                      </IconButton>
-                    </div>
+
+                    <IconButton
+                      color="secondary"
+                      color="inherit"
+                      aria-label="Menu"
+                      className={classes.toolbarButtons}
+                    >
+                      <GitHub />
+                    </IconButton>
                   </Toolbar>
                 </AppBar>
               </div>
