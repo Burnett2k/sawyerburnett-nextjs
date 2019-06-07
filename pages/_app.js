@@ -14,6 +14,14 @@ import {
 } from "@material-ui/core";
 import NavigationMenu from "../containers/NavigationMenu";
 import GitHub from "../components/GitHub";
+import Linkedin from "../components/Linkedin";
+import Link from "next/link";
+
+const ButtonLink = ({ className, href, hrefAs, children }) => (
+  <Link href={href} as={hrefAs}>
+    <a className={className}>{children}</a>
+  </Link>
+);
 
 const styles = {
   grow: {
@@ -62,14 +70,25 @@ class MyApp extends App {
                     <Typography variant="h6" color="inherit">
                       Sawyer Burnett
                     </Typography>
-
                     <IconButton
-                      color="secondary"
                       color="inherit"
                       aria-label="Menu"
+                      component={ButtonLink}
+                      href={"https://github.com/burnett2k"}
                       className={classes.toolbarButtons}
                     >
                       <GitHub />
+                    </IconButton>
+                    <IconButton
+                      color="inherit"
+                      aria-label="Menu"
+                      component={ButtonLink}
+                      className={""}
+                      href={
+                        "https://www.linkedin.com/in/sawyer-burnett-9176411b/"
+                      }
+                    >
+                      <Linkedin />
                     </IconButton>
                   </Toolbar>
                 </AppBar>
