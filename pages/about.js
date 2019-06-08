@@ -11,12 +11,10 @@ import {
   Grid
 } from "@material-ui/core";
 import CardContainer from "../containers/CardContainer";
-import Link from "next/link";
 
 const styles = theme => ({
-  root: {
-    textAlign: "center",
-    paddingTop: theme.spacing.unit * 20
+  paper: {
+    padding: theme.spacing.unit
   }
 });
 
@@ -32,8 +30,8 @@ function About(props) {
         <Typography component="p">
           This website was written using the following technology:
         </Typography>
-        <Grid container justify="center">
-          <Grid item>
+        <Grid container spacing={3}>
+          <Grid item xs className={classes.paper}>
             <Card>
               <CardHeader title="React-Static" />
               <CardContent>
@@ -48,7 +46,7 @@ function About(props) {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item>
+          <Grid item xs className={classes.paper}>
             <Card>
               <CardHeader title="Material UI" />
               <CardContent>
