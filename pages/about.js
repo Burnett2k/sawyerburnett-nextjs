@@ -60,27 +60,6 @@ function About(props) {
             </Card>
           </Grid>
         </Grid>
-        <ul>
-          <li>
-            <a
-              href="http://github.com/burnett2k"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a
-              href="http://linkedin.com/in/sawyer-burnett-9176411b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-
         <p>Recommended Reading:</p>
         <ul>
           <li>
