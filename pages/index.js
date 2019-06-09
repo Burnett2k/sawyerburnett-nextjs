@@ -29,7 +29,7 @@ class Index extends React.Component {
             <Card>
               <CardMedia
                 image={"/static/sedona.jpg"}
-                title="Mt Whitney Summit"
+                title="Sedona"
                 className={classes.media}
               />
               <CardContent>
