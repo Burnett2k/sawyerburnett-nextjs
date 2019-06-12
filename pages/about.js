@@ -4,9 +4,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import {
+  Button,
   Card,
   CardHeader,
   CardContent,
+  CardMedia,
   Typography,
   Grid
 } from "@material-ui/core";
@@ -15,6 +17,19 @@ import CardContainer from "../containers/CardContainer";
 const styles = theme => ({
   paper: {
     padding: theme.spacing.unit
+  },
+  card: {
+    display: "flex"
+  },
+  details: {
+    display: "flex",
+    flexDirection: "column"
+  },
+  content: {
+    flex: "1 0 auto"
+  },
+  cover: {
+    width: 151
   }
 });
 
@@ -30,7 +45,7 @@ function About(props) {
         <Typography component="p">
           This website was written using the following technology:
         </Typography>
-        <Grid container spacing={3}>
+        <Grid container spacing={8}>
           <Grid item xs className={classes.paper}>
             <Card>
               <CardHeader title="React-Static" />
@@ -59,6 +74,26 @@ function About(props) {
           </Grid>
         </Grid>
         <p>Recommended Reading:</p>
+
+        <Card className={classes.card}>
+          <div className={classes.details}>
+            <CardContent className={classes.content}>
+              <Typography component="h5" variant="h5">
+                Deep Work
+              </Typography>
+              <Typography variant="subtitle1">By Cal Newport</Typography>
+            </CardContent>
+            <Button size="small" color="primary">
+              Learn More
+            </Button>
+          </div>
+
+          <CardMedia
+            image="https://images.gr-assets.com/books/1447957962l/25744928.jpg"
+            title="Deep Work"
+            className={classes.cover}
+          />
+        </Card>
         <ul>
           <li>
             {" "}
