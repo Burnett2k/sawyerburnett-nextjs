@@ -43,7 +43,6 @@ function Projects(props) {
   return (
     <div>
       <CardContainer>
-        <h1>Projects</h1>
         <ul>
           {projects.map(project => (
             <React.Fragment>
