@@ -11,10 +11,6 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 const styles = theme => ({
   root: {
     width: "100%"
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
   }
 });
 
@@ -24,7 +20,7 @@ class Panel extends Component {
     return (
       <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>
+          <Typography variant="h5" component="h5">
             {this.props.title}
           </Typography>
         </ExpansionPanelSummary>

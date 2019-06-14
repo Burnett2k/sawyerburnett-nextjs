@@ -43,17 +43,11 @@ function Projects(props) {
   return (
     <div>
       <CardContainer>
-        <ul>
-          {projects.map(project => (
-            <React.Fragment>
-              <Panel
-                key={project.id}
-                title={project.title}
-                link={project.link}
-              />
-            </React.Fragment>
-          ))}
-        </ul>
+        {projects.map(project => (
+          <React.Fragment>
+            <Panel key={project.id} title={project.title} link={project.link} />
+          </React.Fragment>
+        ))}
       </CardContainer>
     </div>
   );
