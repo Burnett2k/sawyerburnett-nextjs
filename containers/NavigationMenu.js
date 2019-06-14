@@ -9,7 +9,13 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { withStyles } from "@material-ui/core/styles";
-import { Home, Person, LaptopMac, GroupAdd } from "@material-ui/icons";
+import {
+  Home,
+  Person,
+  LaptopMac,
+  GroupAdd,
+  ChromeReaderMode
+} from "@material-ui/icons";
 import Link from "next/link";
 
 const ButtonLink = ({ className, href, hrefAs, children, prefetch }) => (
@@ -69,6 +75,12 @@ class NavigationMenu extends React.Component {
               <GroupAdd />
             </ListItemIcon>
             <ListItemText primary="Consulting" />
+          </ListItem>
+          <ListItem button component={ButtonLink} href={"/reading"}>
+            <ListItemIcon>
+              <ChromeReaderMode />
+            </ListItemIcon>
+            <ListItemText primary="Reading" />
           </ListItem>
         </List>
       </div>
