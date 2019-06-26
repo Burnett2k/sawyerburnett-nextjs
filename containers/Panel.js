@@ -32,7 +32,6 @@ class Panel extends Component {
             {this.props.link && <Link href={this.props.link}>Github</Link>}
           </Typography>
         </ExpansionPanelDetails>
-        <ExpansionPanelActions />
       </ExpansionPanel>
     );
   }
