@@ -5,13 +5,14 @@ import Panel from "../containers/Panel.js";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import CardContainer from "../containers/CardContainer";
-import Link from "next/link";
 
 const projects = [
   {
     id: 0,
     title: "Work Timer",
-    link: "https://github.com/Burnett2k/work-timer"
+    link: "https://github.com/Burnett2k/work-timer",
+    description:
+      "After reading some books on productivity, I heard of the Pomodoro Timer technique for managing time. I tried a few tools and they worked fine, but I realized it would be a great learning experience to build one out myself. I set a goal to build a pomodoro timer app which runs entirely on the client (browser) using HTML, Css, and Javascript.  The only dependencies were bootstrap, express, and a few others."
   },
   {
     id: 1,
@@ -45,7 +46,12 @@ function Projects(props) {
       <CardContainer>
         {projects.map(project => (
           <React.Fragment>
-            <Panel key={project.id} title={project.title} link={project.link} />
+            <Panel
+              key={project.id}
+              title={project.title}
+              link={project.link}
+              description={project.description}
+            />
           </React.Fragment>
         ))}
       </CardContainer>

@@ -3,8 +3,10 @@ import {
   ExpansionPanel,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
+  ExpansionPanelActions,
   Typography,
-  withStyles
+  withStyles,
+  Link
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
@@ -25,9 +27,12 @@ class Panel extends Component {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <Typography>{this.props.link}</Typography>
-          <Typography>{this.props.description}</Typography>
+          <Typography>
+            {this.props.description}{" "}
+            {this.props.link && <Link href={this.props.link}>Github</Link>}
+          </Typography>
         </ExpansionPanelDetails>
+        <ExpansionPanelActions />
       </ExpansionPanel>
     );
   }
