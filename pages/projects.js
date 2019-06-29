@@ -22,11 +22,15 @@ const projects = [
   },
   {
     title: "Workout Manager",
-    github: "https://github.com/Burnett2k/workout-manager"
+    github: "https://github.com/Burnett2k/workout-manager",
+    description:
+      "I have many old sports related injuries / tweaks, so I do physical therapy exercises frequently. I decided to create a simple web app that could allow me to keep track of weekly exercises since I'm quite forgetful.  This was early in my career and I was using the MEAN stack (MongoDB, Express, Angular, NodeJs). This is my only project which is currently utilizing a database. It is hosted on the MLab free tier which was awesome and really quick to get up and running!"
   },
   {
     title: "Bash Practice",
-    github: "https://github.com/Burnett2k/BashPractice"
+    github: "https://github.com/Burnett2k/BashPractice",
+    description:
+      "To be a more well-rounded programmer, I decided to deep dive a bit into scripting and chose to look specifically at Bash.  As I learned I decided to create a repo and place examples / lessons within it. I've since used bash for simple automation for Continous Integration (this site is built and deployed using a bash script)."
   }
 ];
 
