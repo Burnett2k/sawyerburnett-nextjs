@@ -40,6 +40,12 @@ class NavigationMenu extends React.Component {
   };
 
   toggleDrawer = (side, open) => () => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
     this.setState({
       [side]: open
     });
@@ -50,40 +56,38 @@ class NavigationMenu extends React.Component {
     const { classes } = this.props;
 
     const list = (
-      <div className={classes.list}>
-        <List component="nav">
-          <ListItem button component={ButtonLink} href={"/"}>
-            <ListItemIcon>
-              <Home />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItem>
-          <ListItem button component={ButtonLink} href={"/about"}>
-            <ListItemIcon>
-              <Person />
-            </ListItemIcon>
-            <ListItemText primary="About" />
-          </ListItem>
-          <ListItem button component={ButtonLink} href={"/projects"}>
-            <ListItemIcon>
-              <LaptopMac />
-            </ListItemIcon>
-            <ListItemText primary="Projects" />
-          </ListItem>
-          <ListItem button component={ButtonLink} href={"/consulting"}>
-            <ListItemIcon>
-              <GroupAdd />
-            </ListItemIcon>
-            <ListItemText primary="Consulting" />
-          </ListItem>
-          <ListItem button component={ButtonLink} href={"/reading"}>
-            <ListItemIcon>
-              <ChromeReaderMode />
-            </ListItemIcon>
-            <ListItemText primary="Reading" />
-          </ListItem>
-        </List>
-      </div>
+      <List component="nav">
+        <ListItem button component={ButtonLink} href={"/"}>
+          <ListItemIcon>
+            <Home />
+          </ListItemIcon>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button component={ButtonLink} href={"/about"}>
+          <ListItemIcon>
+            <Person />
+          </ListItemIcon>
+          <ListItemText primary="About" />
+        </ListItem>
+        <ListItem button component={ButtonLink} href={"/projects"}>
+          <ListItemIcon>
+            <LaptopMac />
+          </ListItemIcon>
+          <ListItemText primary="Projects" />
+        </ListItem>
+        <ListItem button component={ButtonLink} href={"/consulting"}>
+          <ListItemIcon>
+            <GroupAdd />
+          </ListItemIcon>
+          <ListItemText primary="Consulting" />
+        </ListItem>
+        <ListItem button component={ButtonLink} href={"/reading"}>
+          <ListItemIcon>
+            <ChromeReaderMode />
+          </ListItemIcon>
+          <ListItemText primary="Reading" />
+        </ListItem>
+      </List>
     );
 
     return (
@@ -102,12 +106,7 @@ class NavigationMenu extends React.Component {
           open={this.state.left}
           onClose={this.toggleDrawer("left", false)}
         >
-          <div
-            tabIndex={0}
-            role="button"
-            onClick={this.toggleDrawer("left", false)}
-            onKeyDown={this.toggleDrawer("left", false)}
-          >
+          <div role="presentation" onClick={this.toggleDrawer("left", false)}>
             {list}
           </div>
         </Drawer>
