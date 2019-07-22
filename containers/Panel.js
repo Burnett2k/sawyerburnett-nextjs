@@ -6,7 +6,8 @@ import {
   ExpansionPanelActions,
   Typography,
   withStyles,
-  Link
+  Link,
+  CardMedia
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
@@ -32,6 +33,13 @@ class Panel extends Component {
             {this.props.github && <Link href={this.props.github}>Github</Link>}
           </Typography>
         </ExpansionPanelDetails>
+        {this.props.image && (
+          <CardMedia
+            image={this.props.image}
+            title="Sedona"
+            style={{ width: "400px", textAlign: "center" }}
+          />
+        )}
       </ExpansionPanel>
     );
   }

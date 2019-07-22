@@ -3,13 +3,15 @@ import Panel from "../containers/Panel.js";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import CardContainer from "../containers/CardContainer";
+import { CardMedia } from "@material-ui/core";
 
 const projects = [
   {
     title: "Work Timer",
     github: "https://github.com/Burnett2k/work-timer",
     description:
-      "After reading some books on productivity, I heard of the Pomodoro Timer technique for managing time. I tried a few tools and they worked fine, but I realized it would be a great learning experience to build one out myself. I set a goal to build a pomodoro timer app which runs entirely on the client (browser) using HTML, Css, and Javascript.  The only dependencies were bootstrap, express, and a few others."
+      "After reading some books on productivity, I heard of the Pomodoro Timer technique for managing time. I tried a few tools and they worked fine, but I realized it would be a great learning experience to build one out myself. I set a goal to build a pomodoro timer app which runs entirely on the client (browser) using HTML, Css, and Javascript.  The only dependencies were bootstrap, express, and a few others.",
+    image: "/static/worktimer.png"
   },
   {
     title: "Work Timer React",
@@ -51,6 +53,7 @@ function Projects(props) {
             title={project.title}
             github={project.github}
             description={project.description}
+            image={project.image}
           />
         ))}
       </CardContainer>
