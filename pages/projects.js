@@ -3,7 +3,6 @@ import Panel from "../containers/Panel.js";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import CardContainer from "../containers/CardContainer";
-import { CardMedia } from "@material-ui/core";
 
 const projects = [
   {
