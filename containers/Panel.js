@@ -3,7 +3,6 @@ import {
   ExpansionPanel,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
-  ExpansionPanelActions,
   Typography,
   withStyles,
   Link,
