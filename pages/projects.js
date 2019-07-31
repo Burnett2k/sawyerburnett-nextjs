@@ -2,6 +2,7 @@ import React from "react";
 import Panel from "../containers/Panel.js";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
+import { Grid } from "@material-ui/core";
 import CardContainer from "../containers/CardContainer";
 
 const projects = [

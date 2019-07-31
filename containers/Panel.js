@@ -7,13 +7,18 @@ import {
   Typography,
   withStyles,
   Link,
-  CardMedia
+  CardMedia,
+  Grid
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const styles = theme => ({
   root: {
     width: "100%"
+  },
+  media: {
+    marginBottom: "25px",
+    height: "450px"
   }
 });
 
@@ -34,11 +39,15 @@ class Panel extends Component {
           </Typography>
         </ExpansionPanelDetails>
         {this.props.image && (
-          <CardMedia
-            image={this.props.image}
-            title="Sedona"
-            style={{ width: "400px", textAlign: "center" }}
-          />
+          <Grid container direction="row" justify="center" alignItems="center">
+            <Grid item xs={6}>
+              <CardMedia
+                image={this.props.image}
+                title="Sedona"
+                className={classes.media}
+              />
+            </Grid>
+          </Grid>
         )}
       </ExpansionPanel>
     );
