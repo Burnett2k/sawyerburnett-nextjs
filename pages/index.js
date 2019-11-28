@@ -36,10 +36,10 @@ class Index extends React.Component {
                 <Typography variant="subtitle1">
                   I'm a sofware engineer currently located in the Phoenix area.
                   At the moment I am enjoying working with React and Nodejs
-                  applications. Some of my current interests are load testing,
-                  user experience, design philosophy, accessibility, and IoT. I
-                  enjoy working at misson-driven companies which attempt to make
-                  the world a better place.
+                  applications. Some of my interests are load testing, user
+                  experience, design philosophy, unit testing, and IoT. I enjoy
+                  working at misson-driven companies which attempt to make the
+                  world a better place.
                 </Typography>
               </CardContent>
             </Card>
