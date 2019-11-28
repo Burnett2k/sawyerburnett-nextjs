@@ -35,15 +35,11 @@ function About(props) {
         <Grid container spacing={8}>
           <Grid item xs className={classes.paper}>
             <Card>
-              <CardHeader title="React-Static" />
+              <CardHeader title="NextJS" />
               <CardContent>
                 <Typography component="p">
-                  React-Static is a fast, lightweight, and powerful progressive
-                  static site generator based on React and its ecosystem. It
-                  resembles the simplicity and developer experience you're used
-                  to in tools like Create React App and has been carefully
-                  designed for performance, flexibility, and user/developer
-                  experience.
+                  One of the leading static site generators on the market at the
+                  moment.
                 </Typography>
               </CardContent>
             </Card>
