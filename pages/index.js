@@ -37,9 +37,9 @@ class Index extends React.Component {
                   I'm a sofware engineer currently located in the Phoenix area.
                   At the moment I am enjoying working with React and Nodejs
                   applications. Some of my current interests are load testing,
-                  user experience, design philosophy, accessibility, and IoT.
-                  Also, I like to help people which is why I work at Solera
-                  Health.
+                  user experience, design philosophy, accessibility, and IoT. I
+                  enjoy working at misson-driven companies which attempt to make
+                  the world a better place.
                 </Typography>
               </CardContent>
             </Card>
