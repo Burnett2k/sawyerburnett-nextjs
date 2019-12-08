@@ -38,8 +38,11 @@ function About(props) {
               <CardHeader title="NextJS" />
               <CardContent>
                 <Typography component="p">
-                  One of the leading static site generators on the market at the
-                  moment.
+                  One of the leading server-side rendered application
+                  frameworks. Some of the features are:
+                  <li>Server Rendering</li>
+                  <li>CSS-in-JS</li>
+                  Learn more: <a href="https://nextjs.org">NextJS</a>
                 </Typography>
               </CardContent>
             </Card>
@@ -50,7 +53,8 @@ function About(props) {
               <CardContent>
                 <Typography component="p">
                   React components for faster and easier web development. Build
-                  your own design system, or start with Material Design.
+                  your own design system, or start with Material Design. Learn
+                  more: <a href="https://material-ui.com">Material-UI</a>
                 </Typography>
               </CardContent>
             </Card>
