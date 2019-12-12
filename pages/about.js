@@ -8,7 +8,8 @@ import {
   CardHeader,
   CardContent,
   Typography,
-  Grid
+  Grid,
+  CardMedia
 } from "@material-ui/core";
 import CardContainer from "../containers/CardContainer";
 
@@ -18,6 +19,10 @@ const styles = theme => ({
   },
   card: {
     display: "flex"
+  },
+  media: {
+    width: "220px",
+    backgroundSize: "auto"
   }
 });
 
@@ -37,6 +42,13 @@ function About(props) {
             <Card>
               <CardHeader title="NextJS" />
               <CardContent>
+                <CardMedia
+                  component="div"
+                  className={classes.media}
+                  image={
+                    "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+                  }
+                ></CardMedia>
                 <Typography component="p">
                   One of the leading server-side rendered application
                   frameworks. Some of the features are:
@@ -51,6 +63,13 @@ function About(props) {
             <Card>
               <CardHeader title="Material UI" />
               <CardContent>
+                <CardMedia
+                  component="div"
+                  className={classes.media}
+                  image={
+                    "https://material-ui.com/static/images/material-ui-logo.svg"
+                  }
+                ></CardMedia>
                 <Typography component="p">
                   React components for faster and easier web development. Build
                   your own design system, or start with Material Design. Learn
