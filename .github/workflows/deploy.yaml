@@ -15,18 +15,17 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            # move to sawyerburnett app directory
-            cd sawyerburnett-nextjs/
-            # pull the latest code
-            git pull
             # get id of currently running sawyerburnett docker container
             container=$(docker ps -a -q --filter ancestor=sawyerburnett-nextjs --format="{{.ID}}")
             # stop the docker container
             docker stop $container
             # delete old container to save space
             docker rm $(docker ps --filter=status=exited --filter=status=created -q)
+
             # build a new docker container based upon updated repository
-            docker build -t sawyerburnett-nextjs .
+            docker login https://ghcr.io/burnett2k/sawyerburnett-nextjs -u burnett2k -p $CR_PAT
+            docker pull ghcr.io/burnett2k/sawyerburnett-nextjs:latest
+
             # start the docker container
             docker-compose up -d
             # list currently running containers
