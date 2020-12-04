@@ -17,7 +17,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           source: 'docker-compose.yml'
-          target: 'sawyerburnett-nextjs/docker-compose.yml'
+          target: 'sawyerburnett-nextjs'
           rm: true
     steps:
       - name: run bash script
