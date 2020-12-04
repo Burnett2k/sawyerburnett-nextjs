@@ -8,6 +8,17 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: copy file via ssh
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          source: "docker-compose.yml"
+          target: "sawyerburnett-nextjs"
+          rm: true
       - name: run bash script
         uses: appleboy/ssh-action@master
         env:
