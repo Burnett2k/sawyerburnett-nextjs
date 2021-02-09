@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 jobs:
   deploy:
     name: Deploy
@@ -34,7 +35,7 @@ jobs:
             # get id of currently running sawyerburnett docker container
             container=$(docker ps -a -q --filter ancestor=sawyerburnett-nextjs --format="{{.ID}}")
             # stop the docker container
-            docker stop $container
+            docker stop "$container" -t 1
             # delete old container to save space
             docker rm $(docker ps --filter=status=exited --filter=status=created -q)
 
