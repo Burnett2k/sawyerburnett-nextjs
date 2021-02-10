@@ -21,5 +21,3 @@ run shell inside of docker container
 ```
 docker exec -it <container id> sh
 ```
-
-## Hello there
