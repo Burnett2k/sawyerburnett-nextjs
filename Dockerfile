@@ -5,7 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # File Author / Maintainer
-MAINTAINER Sawyer Blue Burnett
+LABEL author="Sawyer Burnett"
 
 # Copy files needed for Node app to install / run
 COPY package.json yarn.lock ./

@@ -2,7 +2,7 @@ version: "3"
 services:
   server:
     container_name: sawyerburnett-nextjs
-    image: sawyerburnett-nextjs
+    image: ghcr.io/burnett2k/sawyerburnett-nextjs
     ports:
       - 5001:5001
     command: yarn start -p 5001
