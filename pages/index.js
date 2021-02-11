@@ -12,7 +12,7 @@ import {
 import CardContainer from "../containers/CardContainer";
 import { withStyles } from "@material-ui/core/styles";
 
-const styles = (theme) => ({
+const styles = () => ({
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
