@@ -7,16 +7,16 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  Grid
+  Grid,
 } from "@material-ui/core";
 import CardContainer from "../containers/CardContainer";
 import { withStyles } from "@material-ui/core/styles";
 
-const styles = theme => ({
+const styles = (theme) => ({
   media: {
     height: 0,
-    paddingTop: "56.25%" // 16:9
-  }
+    paddingTop: "56.25%", // 16:9
+  },
 });
 
 class Index extends React.Component {
@@ -35,11 +35,12 @@ class Index extends React.Component {
               <CardContent>
                 <Typography variant="subtitle1">
                   I'm a sofware engineer currently located in the Phoenix area.
-                  At the moment I am enjoying working with React and Nodejs
-                  applications. Some of my interests are load testing, user
-                  experience, design philosophy, unit testing, and IoT. I enjoy
-                  working at misson-driven companies which attempt to make the
-                  world a better place.
+                  At the moment I am enjoying working on backend and
+                  infrastructure technologies. Some of my interests are load
+                  testing, cloud design patterns, building scalable
+                  applications, unit testing, and IoT. I enjoy working at
+                  misson-driven companies which attempt to make the world a
+                  better place. If I'm learning at my job, then I'm happy!
                 </Typography>
               </CardContent>
             </Card>
@@ -51,7 +52,7 @@ class Index extends React.Component {
 }
 
 Index.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Index);
