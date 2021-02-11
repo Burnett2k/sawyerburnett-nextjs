@@ -10,7 +10,7 @@ import {
   Drawer,
   Typography,
   CssBaseline,
-  IconButton
+  IconButton,
 } from "@material-ui/core";
 import NavigationMenu from "../containers/NavigationMenu";
 import GitHub from "../components/GitHub";
@@ -25,11 +25,11 @@ const ButtonLink = ({ className, href, hrefAs, children }) => (
 
 const styles = {
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   toolbarButtons: {
-    marginLeft: "auto"
-  }
+    marginLeft: "auto",
+  },
 };
 
 class MyApp extends App {
@@ -94,8 +94,6 @@ class MyApp extends App {
                 </AppBar>
               </div>
               <Drawer />
-              {/* Pass pageContext to the _document though the renderPage enhancer
-                to render collected styles on server-side. */}
               <Component pageContext={this.pageContext} {...pageProps} />
             </CssBaseline>
           </MuiThemeProvider>

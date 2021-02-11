@@ -5,7 +5,7 @@ import {
   ListItemText,
   ListItemIcon,
   IconButton,
-  Drawer
+  Drawer,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import { withStyles } from "@material-ui/core/styles";
@@ -14,7 +14,7 @@ import {
   Person,
   LaptopMac,
   GroupAdd,
-  ChromeReaderMode
+  ChromeReaderMode,
 } from "@material-ui/icons";
 import Link from "next/link";
 
@@ -27,16 +27,16 @@ const ButtonLink = ({ className, href, hrefAs, children, prefetch }) => (
 const styles = {
   menuButton: {
     marginLeft: -12,
-    marginRight: 12
+    marginRight: 12,
   },
   list: {
-    width: "auto"
-  }
+    width: "auto",
+  },
 };
 
 class NavigationMenu extends React.Component {
   state = {
-    left: false
+    left: false,
   };
 
   toggleDrawer = (side, open) => () => {
@@ -47,7 +47,7 @@ class NavigationMenu extends React.Component {
       return;
     }
     this.setState({
-      [side]: open
+      [side]: open,
     });
   };
 
@@ -63,23 +63,11 @@ class NavigationMenu extends React.Component {
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItem>
-        <ListItem button component={ButtonLink} href={"/about"}>
-          <ListItemIcon>
-            <Person />
-          </ListItemIcon>
-          <ListItemText primary="About" />
-        </ListItem>
         <ListItem button component={ButtonLink} href={"/projects"}>
           <ListItemIcon>
             <LaptopMac />
           </ListItemIcon>
           <ListItemText primary="Projects" />
-        </ListItem>
-        <ListItem button component={ButtonLink} href={"/consulting"}>
-          <ListItemIcon>
-            <GroupAdd />
-          </ListItemIcon>
-          <ListItemText primary="Consulting" />
         </ListItem>
         <ListItem button component={ButtonLink} href={"/reading"}>
           <ListItemIcon>

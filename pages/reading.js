@@ -5,62 +5,61 @@ import { withStyles } from "@material-ui/core/styles";
 import { Typography, List, ListItem } from "@material-ui/core";
 import CardContainer from "../containers/CardContainer";
 
-const styles = theme => ({
+const styles = (theme) => ({
   paper: {
-    padding: theme.spacing.unit
+    padding: theme.spacing.unit,
   },
   card: {
-    display: "flex"
-  }
+    display: "flex",
+  },
 });
 
 function Reading(props) {
-  const { classes } = props;
   let data = [
     {
       href:
         "https://www.goodreads.com/book/show/25744928-deep-work?from_search=true",
       title: " Deep Work",
-      author: "Cal Newport"
+      author: "Cal Newport",
     },
     {
       href:
         "https://www.goodreads.com/book/show/27968891-site-reliability-engineering?from_search=true",
       title: "Site Reliability Engineering",
-      author: "Google"
+      author: "Google",
     },
     {
       href:
         "https://www.goodreads.com/book/show/17255186-the-phoenix-project?ac=1&from_search=true",
       title: "The Phoenix Project",
-      author: "Gene Kim, Kevin Behr, George Spafford"
+      author: "Gene Kim, Kevin Behr, George Spafford",
     },
     {
       href:
         "https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer?ac=1&from_search=true",
       title: "The Pragmatic Programmer",
-      author: "Andy Hunt and Dave Thomas"
+      author: "Andy Hunt and Dave Thomas",
     },
     {
       href: "https://www.goodreads.com/book/show/19288230-scrum",
       title: "Scrum: The Art of Doing Twice the Work in Half the Time",
-      author: "Jeff Sutherland"
+      author: "Jeff Sutherland",
     },
     {
       href: "https://www.goodreads.com/book/show/23158207-how-google-works",
       title: "How Google Works",
-      author: "Eric Schmidt"
+      author: "Eric Schmidt",
     },
     {
       href: "https://www.goodreads.com/book/show/24724602-flash-boys",
       title: "Flash Boys",
-      author: "Michael Lewis"
+      author: "Michael Lewis",
     },
     {
       href: "",
       title: "Refactoring",
-      author: "Martin Fowler"
-    }
+      author: "Martin Fowler",
+    },
   ];
   return (
     <div>
@@ -90,7 +89,7 @@ function Reading(props) {
 }
 
 Reading.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Reading);
