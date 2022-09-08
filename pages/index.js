@@ -40,7 +40,10 @@ class Index extends React.Component {
                   testing, cloud design patterns, building scalable
                   applications, unit testing, and IoT. I enjoy working at
                   misson-driven companies which attempt to make the world a
-                  better place. If I'm learning at my job, then I'm happy!
+                  better place. If I'm learning at my job, then I'm happy! In my
+                  free time, I'm an avid hiker, cyclist, traveler, and rookie
+                  drone operator. In the near future, I plan to get a commercial
+                  drone license so I can begin selling drone footage online.
                 </Typography>
               </CardContent>
             </Card>
