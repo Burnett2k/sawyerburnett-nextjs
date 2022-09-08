@@ -34,8 +34,8 @@ class Index extends React.Component {
               />
               <CardContent>
                 <Typography variant="subtitle1">
-                  I'm a sofware engineer currently located in the Phoenix area.
-                  At the moment I am enjoying working on backend and
+                  I'm a sofware engineer by trade who loves to tinker and build
+                  new things. At the moment I am enjoying working on backend and
                   infrastructure technologies. Some of my interests are load
                   testing, cloud design patterns, building scalable
                   applications, unit testing, and IoT. I enjoy working at
