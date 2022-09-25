@@ -34,13 +34,16 @@ class Index extends React.Component {
               />
               <CardContent>
                 <Typography variant="subtitle1">
-                  I'm a sofware engineer currently located in the Phoenix area.
-                  At the moment I am enjoying working on backend and
+                  I'm a sofware engineer by trade who loves to tinker and build
+                  new things. At the moment I am enjoying working on backend and
                   infrastructure technologies. Some of my interests are load
                   testing, cloud design patterns, building scalable
-                  applications, unit testing, and IoT. I enjoy working at
+                  applications, generative art, AI, and IoT. I enjoy working at
                   misson-driven companies which attempt to make the world a
-                  better place. If I'm learning at my job, then I'm happy!
+                  better place. If I'm learning at my job, then I'm happy! In my
+                  free time, I'm an avid hiker, cyclist, traveler, and rookie
+                  drone operator. In the near future, I plan to get a commercial
+                  drone license so I can begin selling drone footage online.
                 </Typography>
               </CardContent>
             </Card>

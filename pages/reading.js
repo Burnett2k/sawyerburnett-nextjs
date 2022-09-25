@@ -17,26 +17,22 @@ const styles = (theme) => ({
 function Reading(props) {
   let data = [
     {
-      href:
-        "https://www.goodreads.com/book/show/25744928-deep-work?from_search=true",
-      title: " Deep Work",
+      href: "https://www.goodreads.com/book/show/25744928-deep-work?from_search=true",
+      title: "Deep Work",
       author: "Cal Newport",
     },
     {
-      href:
-        "https://www.goodreads.com/book/show/27968891-site-reliability-engineering?from_search=true",
+      href: "https://www.goodreads.com/book/show/27968891-site-reliability-engineering?from_search=true",
       title: "Site Reliability Engineering",
       author: "Google",
     },
     {
-      href:
-        "https://www.goodreads.com/book/show/17255186-the-phoenix-project?ac=1&from_search=true",
+      href: "https://www.goodreads.com/book/show/17255186-the-phoenix-project?ac=1&from_search=true",
       title: "The Phoenix Project",
       author: "Gene Kim, Kevin Behr, George Spafford",
     },
     {
-      href:
-        "https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer?ac=1&from_search=true",
+      href: "https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer?ac=1&from_search=true",
       title: "The Pragmatic Programmer",
       author: "Andy Hunt and Dave Thomas",
     },
