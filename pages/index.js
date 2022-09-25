@@ -38,7 +38,7 @@ class Index extends React.Component {
                   new things. At the moment I am enjoying working on backend and
                   infrastructure technologies. Some of my interests are load
                   testing, cloud design patterns, building scalable
-                  applications, unit testing, and IoT. I enjoy working at
+                  applications, generative art, AI, and IoT. I enjoy working at
                   misson-driven companies which attempt to make the world a
                   better place. If I'm learning at my job, then I'm happy! In my
                   free time, I'm an avid hiker, cyclist, traveler, and rookie
